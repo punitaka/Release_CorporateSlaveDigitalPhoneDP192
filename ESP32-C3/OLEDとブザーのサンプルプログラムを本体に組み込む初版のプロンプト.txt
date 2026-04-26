@@ -1,0 +1,26 @@
+添付したesp32c6_sield_buzzer_relay.inoをベースに、変更を加えてほしいです。
+
+#esp32c6_sield_buzzer_relay.inoのことを「ベース処理」という言葉で以降表現します。
+#CorporateSlaveDigitalPhoneDP192_ESP32C3.inoとyukkuri_face.hを用いてOLEDへの表示を行います。
+##OLEDの表示タイミングは「ベース処理」のリレーのONのタイミング同じです
+##OLEDの表示時間は「ベース処理」のリレーのONの時間と同じです
+#「ベース処理」はESP32 C6を使用していましたが、マイコンをESP32 C3に変更します。ESP32 C3 モジュールはこちらを利用します
+##https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/
+#Seeeduino XIAO用Grove シールドの利用は廃止します
+##リレー接続：A0ポート（GPIO 2）は廃止します
+##ブザー接続：A1ポート（GPIO 3）は廃止します
+#ブザー接続を別に設けます
+##shiningstar_esp32c3_buzzer_v2.ino を参考にしてください。
+##ブザーの起動タイミングは「ベース処理」と同じです
+##ブザーの起動時間は「ベース処理」と同じです
+#配線は既に完了しています
+##ESP32の5Vを利用してOLEDジュールと接続済みです
+##ESP32のGNDはOLEDジュールと接続済みです
+##ESP32のSDAはOLEDジュールと接続済みです
+##ESP32のSCLはOLEDジュールと接続済みです
+##ESP32C3の3Vを利用してパッシブブザーモジュールと接続済みです
+##ESP32C3のGNDはパッシブブザーモジュールと接続済みです
+##ESP32C3のSDAはパッシブブザーモジュールと接続済みです
+##ESP32C3のD10はパッシブブザーモジュールと接続済みです
+#メール受信などのその他の仕様は「ベース処理」を継続します
+#不明点があれば作業を止めて、私に質問をしてください
